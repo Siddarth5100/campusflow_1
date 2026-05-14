@@ -1,0 +1,211 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-05-13 18:25:54.806255",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "student_details_section",
+  "student_name",
+  "dob",
+  "section_break_zrdo",
+  "age",
+  "gender",
+  "column_break_megf",
+  "city",
+  "state",
+  "pincode",
+  "address",
+  "educational_details_section",
+  "past_grade",
+  "present_grade",
+  "column_break_xigt",
+  "overall_percentage",
+  "previous_school_name",
+  "section_break_xzuq",
+  "school_address",
+  "parent_details_section",
+  "father_name",
+  "mother_name",
+  "email",
+  "contact_number",
+  "emergency_contact_number",
+  "application_info_section",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "student_details_section",
+   "fieldtype": "Section Break",
+   "label": "Student Details"
+  },
+  {
+   "fieldname": "student_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Student Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "dob",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Dob",
+   "reqd": 1
+  },
+  {
+   "fieldname": "age",
+   "fieldtype": "Int",
+   "label": "Age"
+  },
+  {
+   "default": "Male",
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "label": "Gender",
+   "options": "Male\nFemale"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "City"
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Data",
+   "label": "State"
+  },
+  {
+   "fieldname": "pincode",
+   "fieldtype": "Int",
+   "label": "Pincode"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Small Text",
+   "label": "Address"
+  },
+  {
+   "fieldname": "educational_details_section",
+   "fieldtype": "Section Break",
+   "label": "Educational Details"
+  },
+  {
+   "fieldname": "school_address",
+   "fieldtype": "Small Text",
+   "label": "School Address"
+  },
+  {
+   "fieldname": "previous_school_name",
+   "fieldtype": "Data",
+   "label": "Previous School Name"
+  },
+  {
+   "fieldname": "past_grade",
+   "fieldtype": "Data",
+   "label": "Past Grade"
+  },
+  {
+   "fieldname": "present_grade",
+   "fieldtype": "Data",
+   "label": "Present Grade"
+  },
+  {
+   "fieldname": "overall_percentage",
+   "fieldtype": "Float",
+   "label": "Overall Percentage"
+  },
+  {
+   "fieldname": "parent_details_section",
+   "fieldtype": "Section Break",
+   "label": "Parent Details"
+  },
+  {
+   "fieldname": "father_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Father Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "mother_name",
+   "fieldtype": "Data",
+   "label": "Mother Name"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "contact_number",
+   "fieldtype": "Phone",
+   "label": "Contact Number"
+  },
+  {
+   "fieldname": "emergency_contact_number",
+   "fieldtype": "Phone",
+   "label": "Emergency Contact Number"
+  },
+  {
+   "fieldname": "application_info_section",
+   "fieldtype": "Section Break",
+   "label": "Application Info"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Admission Application",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "column_break_megf",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_zrdo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_xigt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_xzuq",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-05-13 18:53:34.214018",
+ "modified_by": "Administrator",
+ "module": "Admission Student Lifecycle",
+ "name": "Admission Application",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
