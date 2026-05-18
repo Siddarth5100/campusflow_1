@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "ADM-.#####",
  "creation": "2026-05-13 18:25:54.806255",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -18,7 +19,7 @@
   "address",
   "educational_details_section",
   "past_grade",
-  "present_grade",
+  "grade",
   "column_break_xigt",
   "overall_percentage",
   "previous_school_name",
@@ -29,9 +30,7 @@
   "mother_name",
   "email",
   "contact_number",
-  "emergency_contact_number",
-  "application_info_section",
-  "amended_from"
+  "emergency_contact_number"
  ],
  "fields": [
   {
@@ -102,13 +101,9 @@
   },
   {
    "fieldname": "past_grade",
-   "fieldtype": "Data",
-   "label": "Past Grade"
-  },
-  {
-   "fieldname": "present_grade",
-   "fieldtype": "Data",
-   "label": "Present Grade"
+   "fieldtype": "Link",
+   "label": "Past Grade",
+   "options": "Program"
   },
   {
    "fieldname": "overall_percentage",
@@ -148,21 +143,6 @@
    "label": "Emergency Contact Number"
   },
   {
-   "fieldname": "application_info_section",
-   "fieldtype": "Section Break",
-   "label": "Application Info"
-  },
-  {
-   "fieldname": "amended_from",
-   "fieldtype": "Link",
-   "label": "Amended From",
-   "no_copy": 1,
-   "options": "Admission Application",
-   "print_hide": 1,
-   "read_only": 1,
-   "search_index": 1
-  },
-  {
    "fieldname": "column_break_megf",
    "fieldtype": "Section Break"
   },
@@ -177,16 +157,24 @@
   {
    "fieldname": "section_break_xzuq",
    "fieldtype": "Section Break"
+  },
+  {
+   "description": "Going to Join?",
+   "fieldname": "grade",
+   "fieldtype": "Data",
+   "label": "Grade",
+   "placeholder": "Eg: Higher Secondary-Grade 12"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2026-05-13 18:53:34.214018",
+ "modified": "2026-05-15 16:43:05.326423",
  "modified_by": "Administrator",
  "module": "Admission Student Lifecycle",
  "name": "Admission Application",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {

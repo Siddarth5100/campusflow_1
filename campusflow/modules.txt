@@ -2,3 +2,4 @@ Campusflow
 Admission Student Lifecycle
 Fees Finance
 Procurement Library
+Evaluation Performance

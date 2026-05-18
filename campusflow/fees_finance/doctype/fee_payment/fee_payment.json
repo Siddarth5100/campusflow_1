@@ -1,29 +1,21 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "format: {FEE}-{student}-{###}",
  "creation": "2026-05-13 18:07:02.390218",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "section_break_yxml",
-  "column_break_bima",
   "student",
   "fee_structure",
-  "paid_amount",
+  "total_amount",
+  "amount",
   "payment_date",
   "payment_mode",
+  "balance_amount",
   "amended_from"
  ],
  "fields": [
-  {
-   "fieldname": "section_break_yxml",
-   "fieldtype": "Section Break"
-  },
-  {
-   "fieldname": "column_break_bima",
-   "fieldtype": "Column Break",
-   "options": "s"
-  },
   {
    "fieldname": "student",
    "fieldtype": "Link",
@@ -35,11 +27,6 @@
    "fieldtype": "Link",
    "label": "Fee Structure",
    "options": "Fee Structure"
-  },
-  {
-   "fieldname": "paid_amount",
-   "fieldtype": "Currency",
-   "label": "Paid Amount"
   },
   {
    "fieldname": "payment_date",
@@ -54,6 +41,18 @@
    "options": "Cash\nCard"
   },
   {
+   "description": "Balance to pay!",
+   "fieldname": "balance_amount",
+   "fieldtype": "Currency",
+   "label": "Balance Amount"
+  },
+  {
+   "description": "Total amount to Pay",
+   "fieldname": "total_amount",
+   "fieldtype": "Data",
+   "label": "Total Amount"
+  },
+  {
    "fieldname": "amended_from",
    "fieldtype": "Link",
    "label": "Amended From",
@@ -62,16 +61,22 @@
    "print_hide": 1,
    "read_only": 1,
    "search_index": 1
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "label": "Amount"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2026-05-14 16:14:04.866177",
+ "modified": "2026-05-15 18:25:46.801241",
  "modified_by": "Administrator",
  "module": "Fees Finance",
  "name": "Fee Payment",
+ "naming_rule": "Expression (old style)",
  "owner": "Administrator",
  "permissions": [
   {

@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "format:{program}-{academic_year}",
  "creation": "2026-05-13 18:06:14.171410",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -19,7 +20,7 @@
   },
   {
    "fieldname": "academic_year",
-   "fieldtype": "Date",
+   "fieldtype": "Data",
    "label": "Academic Year"
   },
   {
@@ -37,10 +38,11 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-05-14 16:01:52.554259",
+ "modified": "2026-05-15 18:07:39.261117",
  "modified_by": "Administrator",
  "module": "Fees Finance",
  "name": "Fee Structure",
+ "naming_rule": "Expression (old style)",
  "owner": "Administrator",
  "permissions": [
   {
