@@ -30,7 +30,8 @@
   "mother_name",
   "email",
   "contact_number",
-  "emergency_contact_number"
+  "emergency_contact_number",
+  "amended_from"
  ],
  "fields": [
   {
@@ -76,8 +77,9 @@
   },
   {
    "fieldname": "pincode",
-   "fieldtype": "Int",
-   "label": "Pincode"
+   "fieldtype": "Data",
+   "label": "Pincode",
+   "length": 6
   },
   {
    "fieldname": "address",
@@ -108,7 +110,8 @@
   {
    "fieldname": "overall_percentage",
    "fieldtype": "Float",
-   "label": "Overall Percentage"
+   "label": "Overall Percentage",
+   "precision": "2"
   },
   {
    "fieldname": "parent_details_section",
@@ -130,7 +133,8 @@
   {
    "fieldname": "email",
    "fieldtype": "Data",
-   "label": "Email"
+   "label": "Email",
+   "reqd": 1
   },
   {
    "fieldname": "contact_number",
@@ -164,13 +168,23 @@
    "fieldtype": "Data",
    "label": "Grade",
    "placeholder": "Eg: Higher Secondary-Grade 12"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Admission Application",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2026-05-15 16:43:05.326423",
+ "modified": "2026-05-20 19:00:49.001070",
  "modified_by": "Administrator",
  "module": "Admission Student Lifecycle",
  "name": "Admission Application",
